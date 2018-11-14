@@ -61,4 +61,7 @@ typings/
 .next
 
 # Fitbit build folder
+
+# Config vars
+config.js
 build/
