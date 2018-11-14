@@ -1,0 +1,1 @@
+export const endpoint = 'https://developer.trimet.org/ws/V2/arrivals'

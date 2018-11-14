@@ -1,15 +1,27 @@
 // Import the messaging module
-import * as messaging from "messaging";
+import * as messaging from 'messaging'
 // Import document
-import document from "document";
+import document from 'document'
 
-let log = document.getElementById("log");
-log.text = "hullo";
+let station1 = document.getElementById('station-1')
 
 // Listen for the onmessage event
-messaging.peerSocket.onmessage = function(evt) {
+messaging.peerSocket.onmessage = message => {
   // Output the message to the console
-  const readable = JSON.stringify(evt.data);
-  console.log(readable);
-  log.text = readable;
-};
+  console.log('message: ' + message)
+  const data = message.data
+  console.log('data: ' + data)
+  const arrivalTime = data.arrivalTime
+  console.log('arrivalTime: ' + arrivalTime)
+  const readable = JSON.stringify(message)
+  console.log('readable: ' + readable)
+
+  // const arrivalTime = readable.data
+  // console.log('arrivalTime: ' + arrivalTime)
+  // station1.text = arrivalTime
+  let mixedtext = document.getElementById('mixedtext')
+  // mixedtext.text = "The Header";
+
+  let body = mixedtext.getElementById('copy')
+  body.text = arrivalTime.toString()
+}

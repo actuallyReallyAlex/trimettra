@@ -1,5 +1,7 @@
-<svg>
-  <rect id="background">
-    <textarea id="log" x="5" y="5" width="100%-10" font-family="System-Regular" fill="black" font-size="30" font-weight="bold" text-length="100"/>
-  </rect>
+<svg viewport-fill="black">
+  <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#header/text" attributeName="text-buffer" to="Holgate & 17th Blvd."/>
+    <set href="#copy/text" attributeName="text-buffer" to="---"/>
+    <set href="#copy/text" attributeName="text-length" to="128" />
+  </use>
 </svg>
