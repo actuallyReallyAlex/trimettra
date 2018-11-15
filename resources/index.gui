@@ -1,7 +1,30 @@
-<svg viewport-fill="black">
-  <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
-    <set href="#header/text" attributeName="text-buffer" to="Holgate & 17th Blvd."/>
-    <set href="#copy/text" attributeName="text-buffer" to="---"/>
-    <set href="#copy/text" attributeName="text-length" to="128" />
+<svg>
+  <use id="container" href="#panoramaview">
+    <use id="item1" href="#panoramaview-item">
+      <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+        <set href="#header/text" attributeName="text-buffer" to="Holgate & 17th Blvd."/>
+        <set href="#copy/text" attributeName="text-buffer" to="---"/>
+        <set href="#copy/text" attributeName="text-length" to="128" />
+      </use>
+    </use>
+    <use id="item2" href="#panoramaview-item" fill="green">
+      <rect width="100%" height="100%" />
+    </use>
+    <use id="item3" href="#panoramaview-item" fill="blue">
+      <rect width="100%" height="100%" fill="blue" />
+    </use>
+    <use id="item4" href="#panoramaview-item" fill="gray">
+      <rect width="100%" height="100%" fill="gray" />
+    </use>
+
+    <!-- Have enough pagination dots for your slides (extras are hidden) -->
+    <use id="pagination-dots" href="#pagination-widget" y="8">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
   </use>
 </svg>

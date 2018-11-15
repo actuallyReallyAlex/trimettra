@@ -13,13 +13,19 @@
     "appType": "app",
     "appDisplayName": "Trimettra",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "wipeColor": "#ff5722",
+    "requestedPermissions": [
+      "access_internet"
+    ],
     "buildTargets": [
       "higgs",
       "meson"
     ],
-    "i18n": {}
+    "i18n": {
+      "en": {
+        "name": "Trimettra"
+      }
+    }
   },
   "scripts": {
     "build": "fitbit-build",
