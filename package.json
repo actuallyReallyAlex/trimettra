@@ -5,7 +5,7 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "@fitbit/sdk": "~1.0.4",
+    "@fitbit/sdk": "~1.0.6",
     "@fitbit/sdk-cli": "^1.0.2"
   },
   "fitbit": {
